@@ -4,5 +4,9 @@
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
-  "remoteUser": "node"
+  "remoteUser": "node",
+  "tasks": {
+    "build": "npm install && npm run build",
+    "launch": "npm install && npm run dev"
+  }
 }
